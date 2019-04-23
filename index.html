@@ -1,153 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Sample HTML Projects</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sample Web Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body class="is-preload">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="avatar image"><img src="images/logo.png" alt="" /></a>
+					<h1><strong>Sample HTML Projects</strong><br /></h1>
+				</div>
+			</header>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+		<!-- Main -->
+			<div id="main">
 
-        body {
-            margin: 0;
-            background: url('logo.png');
-            background-repeat: no-repeat;
-            background-position: 2% 2%;
-            background-size: auto auto;
-        }
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Playing around with the Internet <br />
+							and testing web technologies.</h2>
+						</header>
+						<p>All websites are hosted in Azure and Github Pages. Source code is available in GitHub and linked within each project.</p>
 
-        .header {
-            padding: 20px;
-            text-align: center;
-        }
+						<h3>JavaScript Examples</h3>
+						<table class="tg">
+							<tr>
+							  <td class="my-list-item">
+									<a href="https://sajeewa-dissa.github.io/multiplication-tables-js/index.html">
+										<div>
+												<span class="summary">Modulo Multiplication Tables in JavaScript.</span>
+												Drawing geometric patterns on a canvas using client-side JavaScript. Demonstrates using event-emitters and listeners.
+										</div>
+									</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td class="disabled">
+										<div class="list-group">
+												<span class="summary disabled">The Royal Game of Ur. </span>Coding a board game user-interface and a PVE computer AI using client-side JavaScript (Under Construction).
+												<i class="fa fa-lock"></i>
+										</div>
+							  </td>
+							</tr>
+						</table>
 
-        .footer {
-            padding: 10px;
-            text-align: center;
-        }
+						<h3>Asp.Net Examples</h3>
+						<table class="tg">
+							<tr>
+							  <td class="my-list-item">
+									<a href="#">
+										<div>
+												<span class="summary">MVC Supermarket Sweep. </span>
+												A simple online game in a store with a depreciating stock count on the server updated in real-time on the client. <wbr/>
+												Demonstrates an in-process server function that simulates an NPC shopper working as an AI adversary.
+										</div>
+									</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td class="disabled">
+										<div class="list-group">
+												<span class="summary disabled">To Be Completed. </span>To be completed (Under Construction).
+												<i class="fa fa-lock"></i>
+										</div>
+							  </td>
+							</tr>
+						</table>
 
-        /*update background for small screens*/
-        @media screen and (max-width: 800px) {
-            body {
-                background-image: url('logotransp.png');
-            }
-        }
+						<h3>Azure Cloud Examples</h3>
+						<table class="tg">
+							<tr>
+							  <td class="my-list-item">
+									<a href="https://sajeewa-dissa.github.io/multiplication-tables-azure/index.html">
+										<div>
+												<span class="summary">Modulo Multiplication Tables in JSON. </span>
+												Drawing geometric patterns using JSON objects, Azure [serverless] functions and Azure Cloud Services. <wbr/>
+												Demonstrates use of a continuous asynchronous request-response loop using XmlHttpRequest (XHR) and promises.
+										</div>
+									</a>
+							  </td>
+							</tr>
+							<tr>
+							  <td class="disabled">
+										<div class="list-group">
+												<span class="summary disabled">Node.Js Web Server. </span>To be completed (Under Construction).
+												<i class="fa fa-lock"></i>
+										</div>
+							  </td>
+							</tr>
+						</table>
 
-        /* Create three unequal columns that floats next to each other */
-        .column {
-            float: left;
-            padding: 10px;
-        }
+					</section>
 
-            /* Left and right column */
-            .column.side { /* applies to an element with both these classes */
-                width: 20%;
-            }
+				<!-- Two -->
+					<section id="two">
+						<h2>Get In Touch</h2>
+						<p>Constructive comments are always welcome.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="https://formspree.io/sajeeva.dissa@gmail.com">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>	
+									</div>
+								</form>
 
-            /* Middle column */
-            .column.middle {
-                width: 60%;
-            }
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<!-- <div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">hello@untitled.tld</a>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</section>
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+			</div>
 
-        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 1200px) {
-            .column.side, .column.middle {
-                width: 100%;
-            }
-        }
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/Sajeewa-Dissa/" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:sajeeva.dissa@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Sajeewa Dissanayake 2019</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-        .footer {
-            padding: 10px;
-            text-align: center;
-        }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-        /*a.list-group-item:visited {
-            background: #F0FFFF;
-        }*/
-
-        a.list-group-item:hover {
-            background: #DDFFFF;
-        }
-
-        .summary{
-          font-weight: bold;
-          color:blueviolet;
-        }
-    </style>
-</head>
-<body>
-    <div class="container-fluid">
-        <header class="header">
-            <h1>Sample HTML Projects</h1>
-            <p>Playing around with the Internet and Web technologies. <br>
-              All source code is available in GitHub and linked within each project.</p>
-        </header>
-
-        <div class="row">
-            <div class="column side">
-            </div>
-
-            <div class="column middle">
-                <h3>JavaScript Examples</h3>
-                <div class="list-group">
-                    <a href="https://sajeewa-dissa.github.io/multiplication-tables-js/index.html" target="_blank" class="list-group-item"><p><span class="summary">Modulo Multiplication Tables in JavaScript.</span>
-                        Drawing geometric patterns on a canvas using client-side JavaScript. Demonstrates using event-emitters and listeners.</p></a>
-                    <a href="#" class="list-group-item disabled">
-                        <p>
-                            <b>The Royal Game of Ur.</b> Coding a board game user-interface and a PVE computer AI using client-side JavaScript (Under Construction).
-                            <span class="glyphicon glyphicon-ban-circle"></span>
-                        </p>
-                    </a>
-                </div>
-                <br />
-                <h3>Asp.Net Examples</h3>
-                <div class="list-group">
-                    <a href="#" class="list-group-item"><p><span class="summary">MVC Supermarket Sweep.</span>
-                        A simple online store with a depreciating stock count on the server updated in real-time on the client.</p></a>
-                    <a href="#" class="list-group-item disabled">
-                        <p>
-                            <b>To Be Completed</b> To be completed (Under Construction).
-                            <span class="glyphicon glyphicon-ban-circle"></span>
-                        </p>
-                    </a>
-                </div>
-                <br />
-
-                <h3>Azure Cloud Examples</h3>
-                <div class="list-group">
-                    <a href="https://sajeewa-dissa.github.io/multiplication-tables-azure/index.html" target="_blank"  class="list-group-item"><p><span class="summary">Modulo Multiplication Tables in JSON.</span>
-                        Drawing geometric patterns using JSON objects, Azure [serverless] functions and Azure Cloud Services. <wbr/>
-                        Demonstrates use of a continuous asynchronous request-response loop using XmlHttpRequest (XHR) and promises.</p></a>
-                    <a href="#" class="list-group-item disabled">
-                        <p>
-                            <b>Node.Js Web Server.</b> To be completed (Under Construction).
-                            <span class="glyphicon glyphicon-ban-circle"></span>
-                        </p>
-                    </a>
-                </div>
-            </div>
-            <div class="column side">
-            </div>
-        </div>
-        <footer class="footer">
-            <p>
-                &#169;<small> Copyright 2019 Sajeewa Dissanayake</small>
-            </p>
-        </footer>
-    </div>
-</body>
+	</body>
 </html>
