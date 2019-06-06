@@ -171,10 +171,12 @@
 					url: 'https://mynoddysupermarketsweep.azurewebsites.net',
 					type: 'HEAD',
 					success: function(result){
-						alert('reply');
+						// alert('reply');
+						return;
 					},     
 					error: function(result){
-						alert('timeout/error');
+						// alert('timeout/error');
+						return;
 					}
 				});
 			}
