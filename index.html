@@ -156,12 +156,29 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			// run a function to awaken the azure website (takes time to spin-up)
+			window.onload = ping;
+
+			function ping(){
+				$.ajax({
+					url: 'https://mynoddysupermarketsweep.azurewebsites.net',
+					type: 'HEAD',
+					success: function(result){
+						alert('reply');
+					},     
+					error: function(result){
+						alert('timeout/error');
+					}
+				});
+			}
+		</script>
 
 	</body>
 </html>
