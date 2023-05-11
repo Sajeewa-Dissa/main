@@ -52,7 +52,7 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="//mynoddysupermarketsweep.azurewebsites.net/Home/Index.html" target="_blank" class="image fit"><img src="images/03.jpg" alt="" /></a>
-								<h3><a href="//mynoddysupermarketsweep.azurewebsites.net/Home/Index.html" target="_blank">MyNoddy MVC Supermarket Sweep</a></h3>
+								<h3><a href="//mynoddysupermarketsweep.azurewebsites.net/Home/Index" target="_blank">MyNoddy MVC Supermarket Sweep</a></h3>
 								<p>An unlikely use-case for ASP.NET Framework MVC; an online shopping game in a store with a depreciating stock count on the server
 									updated in real-time on the client. <wbr/> Showcases an AI shopper-bot working as an adversary. <wbr/>
 								   Hosted as an Azure webapp with a fully responsive layout. 2019</p>
@@ -135,9 +135,6 @@
 				window.onload = ping;
 	
 				function ping(){
-
-					console.log("hello from ping");
-
 					$.ajax({
 						url: 'https://mynoddysupermarketsweep.azurewebsites.net',
 						type: 'HEAD',
@@ -150,8 +147,6 @@
 							return;
 						}
 					});
-
-					console.log("hello2 from ping");
 				}
 			</script>
 
